@@ -1,0 +1,13 @@
+*.exe
+*.dll
+*.zip
+*.ini
+*.log
+*.dmp
+*.bmp
+*.tmp
+recordings/
+.cache-build/
+__pycache__/
+installer-build.json
+BUILD-INFO.json
