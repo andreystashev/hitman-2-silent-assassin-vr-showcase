@@ -59,9 +59,15 @@ The default output folder is `recordings` beside the mod. Focus the recording co
 
 Include:
 
-- **Alpha 1**, Steam/GOG build, headset and controllers.
+- **Alpha 2 RC1**, Steam/GOG build, headset and controllers.
 - Connection profile/runtime, renderer and game resolution/window mode.
 - The mission, outfit, weapon and steps needed to reproduce the problem.
 - Whether it appears on the monitor, in the headset, in gameplay or only in a menu/cutscene.
 
 Logs and status files are saved locally beside the mod. Review them before attaching excerpts: they can contain local paths or device information. Nothing is uploaded automatically. Do not post the game executable, original assets, credentials or a memory dump in a public issue.
+
+## On12 and action-camera diagnostics
+
+An On12 prerequisite failure names the unavailable component. Select Original to use the existing renderer. Restore-Hitman2-On12.cmd restores a managed On12 installation after an interrupted session, with the game and host closed.
+
+For camera-transition reports, include the mission, action and whether it was cancelled. The cameraState diagnostic includes the native mode stack and returnPops/returnReacquisitions. A completed action waits for a stable idle state before recovery; active native operations are preserved. Game FPS and host submissions alone do not establish newly displayed stereo-image FPS.

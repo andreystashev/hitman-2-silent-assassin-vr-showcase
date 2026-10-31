@@ -1,6 +1,6 @@
-# Alpha 1 preview status and known issues
+# Alpha 2 RC1 preview status and known issues
 
-Alpha 1 is designed for playing the original game in VR while keeping its native gameplay systems. It is an early preview, not a claim that every mission, outfit, interaction and hardware combination has completed an end-to-end validation pass.
+Alpha 2 RC1 is designed for playing the original game in VR while keeping its native gameplay systems. It is an early preview, not a claim that every mission, outfit, interaction and hardware combination has completed an end-to-end validation pass.
 
 ## Gameplay and interactions
 
@@ -28,3 +28,9 @@ Alpha 1 is designed for playing the original game in VR while keeping its native
 The optional recorder currently outputs 1920×1080 video at up to 60 FPS. It does not automatically match a 4K/8K game rendering resolution.
 
 Please save regularly and report reproducible issues with the details listed in [troubleshooting](TROUBLESHOOTING.md#reporting-an-issue).
+
+## Alpha 2 RC1 checks and limits
+
+The Tunnel Rat nested ladder-camera problem was reproduced, fixed and retested by the player with repeated ladder entry, cancellation and exit. The matching native mode1 recovery was observed in diagnostics. This is not a full campaign or every-action validation.
+
+On12 GPU is optional and depends on installed Windows/DirectX components, graphics-driver sharing support and the game/headset adapter. Microsoft x86 D3DX9_43 is required. Visual checks and exact-pixel fixtures do not cover every mission effect or driver. Game presents, newly rendered stereo pairs and runtime submissions are different rates; submission rate may include repeated images.

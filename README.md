@@ -1,14 +1,22 @@
-# Hitman 2: Silent Assassin VR — Alpha 1
+# Hitman 2: Silent Assassin VR — Alpha 2 RC1
 
-**[Download Alpha 1 — Preview installer](https://github.com/andreystashev/hitman-2-silent-assassin-vr-showcase/releases/download/alpha-1/Hitman2VR-Alpha1-Setup.exe)** | [Release notes](RELEASE-NOTES.md) | [All releases](https://github.com/andreystashev/hitman-2-silent-assassin-vr-showcase/releases)
+**[Download Alpha 2 RC1 — Preview installer](https://github.com/andreystashev/hitman-2-silent-assassin-vr-showcase/releases/download/alpha-2-rc1/Hitman2VR-Alpha2-RC1-Setup.exe)** | [Release notes](RELEASE-NOTES.md) | [All releases](https://github.com/andreystashev/hitman-2-silent-assassin-vr-showcase/releases)
 
 A community VR conversion for the original **Hitman 2: Silent Assassin (2002)** on PC, with stereo rendering, head tracking and controller-driven arms and weapons.
 
-Alpha 1 is a **playable preview designed for playing the original campaign in VR with its original mechanics**. Missions, objectives, enemy AI, stealth, disguises, inventory, contextual actions, saves and progression continue to use the game's native systems. The mod adds VR viewing and controller-based weapon handling to that game.
+Alpha 2 RC1 is a **playable preview designed for playing the original campaign in VR with its original mechanics**. Missions, objectives, enemy AI, stealth, disguises, inventory, contextual actions, saves and progression continue to use the game's native systems. The mod adds VR viewing and controller-based weapon handling to that game.
 
 It remains a preview. VR interactions, rendering and compatibility still need testing across missions, outfits, weapons, controllers and headsets. Original inventory and action menus remain available when a VR interaction is awkward. See [known issues and testing limits](KNOWN-ISSUES.md).
 
 You need your own legitimate copy of the game. No game executable or game assets are included. This project is independent of IO Interactive and the game's publishers.
+
+## New in Alpha 2 RC1
+
+- Optional **On12 GPU** rendering with GPU scene transfer to Meta/OpenXR, including Hitman 2's XRGB backbuffer. Prerequisites are checked before changing the renderer, and original renderer files are restored after play.
+- Fix for the camera staying inside the character after nested ladder/action transitions, reproduced and retested in **Tunnel Rat**.
+- Complete On12 runtime, license and recovery tools in the installer. Original remains the default.
+
+See [release notes](RELEASE-NOTES.md) for validation and measured performance limits.
 
 ## What the mod adds
 
@@ -33,7 +41,7 @@ Connection profiles are **Quest Link / Air Link (Meta)**, **Virtual Desktop / VD
 
 ## Install and play
 
-1. Download `Hitman2VR-Alpha1-Setup.exe` from [Releases](https://github.com/andreystashev/hitman-2-silent-assassin-vr-showcase/releases/tag/alpha-1).
+1. Download `Hitman2VR-Alpha2-RC1-Setup.exe` from [Releases](https://github.com/andreystashev/hitman-2-silent-assassin-vr-showcase/releases/tag/alpha-2-rc1).
 2. Close the game and old VR launcher. Run the installer and select your supported `hitman2.exe`.
 3. Install the mod in its own folder, outside the game folder.
 4. Connect the headset through your chosen PC VR application.
@@ -45,7 +53,7 @@ Steam may wait for a launch confirmation on the monitor or in the headset. Respo
 
 ## Release defaults
 
-| Setting | Alpha 1 default |
+| Setting | Alpha 2 RC1 default |
 | --- | --- |
 | VR startup | Automatic; no separate switch |
 | Weapon crosshair | Off |
@@ -61,7 +69,7 @@ Updates preserve existing settings. The installer detects a registered previous 
 
 Read [installation and updates](INSTALLATION.md), [controller controls](CONTROLS.md), [troubleshooting](TROUBLESHOOTING.md) and [known issues](KNOWN-ISSUES.md).
 
-Reports should include Alpha 1, the game build, headset, connection profile, renderer, resolution and reproducible steps. Review logs before sharing them: they may contain local paths and device information. Do not upload the game, saved credentials or memory dumps to a public issue.
+Reports should include Alpha 2 RC1, the game build, headset, connection profile, renderer, resolution and reproducible steps. Review logs before sharing them: they may contain local paths and device information. Do not upload the game, saved credentials or memory dumps to a public issue.
 
 ## About this repository
 

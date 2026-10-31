@@ -15,7 +15,7 @@ A store/version label alone is insufficient. Modified executables, alternative r
 
 1. Install the game and confirm that it starts normally. Choose a working rendering resolution.
 2. Close the game, VR host and old mod launcher. Save your progress first.
-3. Run `Hitman2VR-Alpha1-Setup.exe`. Select the supported `hitman2.exe`; Steam libraries are searched automatically.
+3. Run `Hitman2VR-Alpha2-RC1-Setup.exe`. Select the supported `hitman2.exe`; Steam libraries are searched automatically.
 4. Choose a separate mod folder outside the game folder. The default is under your Windows user account; administrator rights are normally unnecessary.
 5. Connect your headset through the PC VR software you plan to use.
 6. Open **Hitman 2 VR**, select the connection profile and click **Save & play**.
@@ -80,3 +80,9 @@ Close the old launcher, game and VR host first. The installer refuses an active 
 Close the game and host, then uninstall **Hitman 2: Silent Assassin VR** through Windows Apps. The installed runtime and shortcuts are removed; user settings and recordings remain.
 
 Renderer backups in the game folder are separate from installed mod files. If a renderer session was interrupted, recover it while the complete mod package is still available. Retain the backup if recovery reports a conflict.
+
+## Optional On12 GPU renderer
+
+Choose On12 GPU in Game renderer. It requires Microsoft x86 D3DX9_43 and compatible Windows/graphics-driver support for D3D9On12, shared textures and fences. The game and headset must use the same GPU. The launcher checks prerequisites before replacing the renderer. The original d3d8.dll bytes or its absence are backed up and restored after the game and host exit. Restore-Hitman2-On12.cmd provides recovery without a headset. Keep the complete renderer-on12 and tools-renderer folders.
+
+Menus, optics and unsupported GPU-transfer cases retain the CPU path. Original remains available and is the installation default.
